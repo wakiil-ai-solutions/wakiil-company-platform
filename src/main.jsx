@@ -67,7 +67,7 @@ function useRoute() {
 }
 
 function Link({ to = 'home', children, className = '', onClick }) { return <a className={className} href={`#/${to}`} onClick={onClick}>{children}</a>; }
-function BrandMark() { return <span className="brand-mark" aria-hidden="true">W</span>; }
+function BrandMark() { return <span className="brand-mark" aria-hidden="true"><img src={`${import.meta.env.BASE_URL}assets/wakiil-logo.png`} alt="" /></span>; }
 function Button({ to, href, children, variant = 'primary', onClick }) { const className = `button button-${variant}`; const content = <>{children}<span aria-hidden="true">↗</span></>; return to ? <Link to={to} className={className} onClick={onClick}>{content}</Link> : <a className={className} href={href} onClick={onClick}>{content}</a>; }
 
 function Header({ lang, setLang, route, c }) {
