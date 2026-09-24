@@ -4,4 +4,5 @@ export const siteConfig = {
   contactEmail: import.meta.env.VITE_CONTACT_EMAIL || 'hello@wakiilai.com',
   leadEndpoint: import.meta.env.VITE_LEAD_ENDPOINT || '',
   chatEndpoint: import.meta.env.VITE_CHAT_ENDPOINT || '',
+  defaultLang: import.meta.env.VITE_DEFAULT_LANG || 'en',
 };
